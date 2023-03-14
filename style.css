@@ -1,3 +1,13 @@
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header-design{
+    background: #2483c5;
+}
 .usof_complete_title{font-family: 'Montserrat', sans-serif;
 font-size: 26px;
 color: #4874f1;
@@ -42,6 +52,38 @@ font-weight: bold;
     line-height: 26px;
     width: auto;
 }
-.footer-design{
-    background-color: #4874f1;
+a{
+    text-decoration: none;
+}
+#footer {
+    background: #2483c5;
+}
+#footer .footer-top {
+    padding: 0;
+    background: #DEECFF;
+}
+ul.footermenu {
+	margin: 0px;
+	display: block;
+	text-align: center;
+	width: 110%;
+	padding: 6px 0px;
+}
+
+ul.footermenu li {
+	display: inline-block;
+	padding: 0px 12px;
+	border-right: 1px dotted black;
+	line-height: 14px;
+}
+
+ul.footermenu li a {
+	color: black;
+}
+.footer-top-down {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background: #DEECFF;
 }
