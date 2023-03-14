@@ -5,6 +5,28 @@
     list-style: none;
     align-items: center;
 }
+.title_head_text::before {
+    content: " ";
+    display: block;
+    background: #01a54f;
+    height: 9px;
+    width: 50px;
+    position: absolute;
+    left: -90px;
+    top: 15px;
+    border-radius: 10px;
+}
+.title_head_text::after {
+    content: " ";
+    display: block;
+    background: #01a54f;
+    height: 9px;
+    width: 50px;
+    position: absolute;
+    right: -90px;
+    top: 15px;
+    border-radius: 10px;
+}
 .header-design{
     background: #2483c5;
 }
