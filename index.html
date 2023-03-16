@@ -5,28 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Utkarsh</title>
-        <!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="icon" type="image/x-icon" href="assets/img/fevicon.png">
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://socialjustice.gov.in/public/latest/css/owl.carousel.min.css" >
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="assets/img/fevicon.png">
 </head>
 <body>
-  <nav class="navbar py-1  bg-light header1 d-none d-md-flex pe-3">
-    <a class="navbar-brand d-flex align-items-center" href="https://socialjustice.gov.in/">
-       <img src="assets/img/government-logo.png" alt="central gov logo" width="40" class="me-2 ms-2">
-       <p class="m-0 lh-1 fs-7 text-dark">Ministry of Social Justice and Empowerment
-        <br>Government of India
-     </p> 
-    </a>
+<nav class="navbar py-1  bg-light header1 d-none d-md-flex">
+ <div class="container-fluid">
+	<a class="navbar-brand d-none d-lg-flex align-items-center" href="https://socialjustice.gov.in" aria-label="Go to home Department of Social Justice &amp; Empowerment " title="Go to home Department of Social Justice &amp; Empowerment ">
+         <img src="assets/img/government-logo.png" alt="Go to home Department of Social Justice &amp; Empowerment " width="60" class="government-logo" title="Go to home Department of Social Justice &amp; Empowerment ">
+         <div class="lh-1 fs-6 fw-ligh ms-2 text-black">
+            <h6 class="m-0 mb-3"> Department of Social Justice &amp; Empowerment </h6>
+            <p class="m-0 fs-7 fw-bolder"> Ministry of Social Justice &amp; Empowerment </p>
+            <p class="m-0 fs-7 fw-bolder"> Government of India </p>
+         </div>
+      </a>
     <div>
       <div class="usof_complete_title title_head_text">
-      <h2 class="text-primary fw-bold">MISSION UTKARSH</h2>
+      <h2 class="fw-bold">MISSION UTKARSH</h2>
       </div>
     </div>
     <div class="d-lg-inline-block d-flex align-items-center justify-content-between md-width100">
@@ -37,13 +35,14 @@
        <img src="assets/img/swachh.png" alt="Ek kadam swachchhata ki wor" width="130">		
        </a>
     </div>
+ </div>
 </nav>
     <nav class="navbar header-design">
         <div class="container-fluid">
           <!-- <a class="navbar-brand text-white">Mission Utkarsh</a> -->
-          <ul class="navlist text-white m-3" id="main-menu">
+          <ul class="navlist text-white my-2" id="main-menu">
             <li class="nav-item me-5">
-            <a class="nav-link" href="#"> Home</a>
+            <a class="nav-link" href="index.html"> Home</a>
           </li>
           <li class="nav-item me-5">
             <a class="nav-link" href="#"> Download</a>
@@ -64,15 +63,11 @@
   <!-- Indicators/dots -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-dark"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="bg-dark"></button>
   </div>
   
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://cbpssubscriber.mygov.in/assets/uploads/juGajmc1gOVBUtt5?78?54" id="_2oFrlT1Niz0Tls0Z" onclick="javascript:window.open('https://cbpssubscriber.mygov.in/aff/2oFrlT1Niz0Tls0Z')" style="cursor:pointer" onload="javascript:(function(){if(typeof _done == 'undefined' || !_done){this.setAttribute('src', this.getAttribute('src')+'?'+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
       <img src="https://cbpssubscriber.mygov.in/assets/uploads/juGajmc1gOVBUtt5?78?54" id="_2oFrlT1Niz0Tls0Z" onclick="javascript:window.open('https://cbpssubscriber.mygov.in/aff/2oFrlT1Niz0Tls0Z')" style="cursor:pointer" onload="javascript:(function(){if(typeof _done == 'undefined' || !_done){this.setAttribute('src', this.getAttribute('src')+'?'+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)" class="d-block w-100">
     </div>
   </div>
@@ -85,22 +80,27 @@
     <span class="carousel-control-next-icon bg-dark"></span>
   </button>
 </div>
-    <div class="mt-3 mb-3">
+    <div class="mt-4 mb-4">
         <div>
           <div class="text-center">
-            <select name="scheme" id="scheme" class="p-2 border rounded w-25">
-              <option value="Scheme"> Select Scheme</option>
-              <option value="1" selected>Progress Status under 4 KPI's of the 'Adarsh Gram' component of PM-AJAY during FY 2023-24</option>
-              <option value="1">PMDAKSH(No. of beneficiaries provided training under Skill Development Programme to the target group)</option>
-          </select>
+		  <form>
+			<label for="scheme" class="fw-bold me-2">Select KPI Schemes</label>
+            <select id="scheme" class="p-2 border border-2 border-blue form-select d-inline w-25 shadow-none pe-5">
+              <option value=""  >Select KPI Schemes</option>
+              <option value="mu-table1">Progress Status under 4 KPI's of the 'Adarsh Gram' component of PM-AJAY during FY 2023-24</option>
+              <option value="mu-table2">PMDAKSH(No. of beneficiaries provided training under Skill Development Programme to the target group)</option>
+              <option value="mu-table3">No. of beneficiaries provided Loan and the amount of the loan(NSFDC)</option>
+			</select>
+			</form>
           </div>
             <section>
-                <div class="container">
-                  <div id="table1" class="">
-                            <div class="shadow p-3 mb-5 bg-body rounded w-100 mt-5" id="v-pills-1">
+                <div class="container-fluid">
+				
+                  <div id="mu-table1" class="row mu-table" style="display:none;">
+                            <div class="p-3 bg-body rounded w-100 mt-5 pb-0" id="v-pills-1">
                                 <div class="text-center fw-bold fs-4">Progress Status under 4 KPI's of the 'Adarsh Gram' component of PM-AJAY during FY 2023-24</div><br/>
-                                <table class="table table-bordered">
-                                  <thead>
+                                <table class="table table-bordered table-striped mb-0">
+                                  <thead class="header-design text-white">
                                     <tr>
                                         <th rowspan="2">State</th>
                                         <th rowspan="2">District</th>
@@ -1000,11 +1000,298 @@
                               </table>
                             </div>
                         </div>
-                    </div>
+                
+				
+                  <div id="mu-table2" class="row mu-table" style="display:none;">
+                            <div class="p-3 bg-body rounded w-100 mt-5 pb-0" id="v-pills-1">
+                                <div class="text-center fw-bold fs-4">PMDAKSH(No. of beneficiaries provided training under Skill Development Programme to the target group)</div><br/>
+                                
+								<table class="table table-bordered table-striped mb-0">
+                                  <thead class="header-design text-white">
+											<tr>
+												<th>Name of District (State) </th>
+												<th>Status of KPI in district before launch of Mission Utkarsh ( Baseline) </th>
+												<th>Current level of KPI in the district</th>
+												<th>State average ( pertaining to State in which the district concern fall) </th>
+												<th>National average of the KPI</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Baksa (Assam) </td>
+												<td></td>
+												<td>72</td>
+												<td>20.43</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Darrang (Assam) </td>
+												<td></td>
+												<td>30</td>
+												<td>20.43</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Chamba (Himachal Pradesh) </td>
+												<td></td>
+												<td>95</td>
+												<td>19.92</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Bahriach (Uttar Pradesh)  </td>
+												<td></td>
+												<td>- </td>
+												<td>- </td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Bokaro (Jharkhand) </td>
+												<td></td>
+												<td>80</td>
+												<td>17.5</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Chatra (Jharkhand) </td>
+												<td></td>
+												<td>- </td>
+												<td>17.5</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Raichur  (Karnataka) </td>
+												<td></td>
+												<td>- </td>
+												<td>- </td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Rajgarh (Madhya Pradesh) </td>
+												<td></td>
+												<td>240</td>
+												<td>19.9</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Gadchiroli (Maharashtra) </td>
+												<td></td>
+												<td>- </td>
+												<td>- </td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Bolangir (Odisha) </td>
+												<td></td>
+												<td>- </td>
+												<td>- </td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Gajapati (Odisha) </td>
+												<td></td>
+												<td>- </td>
+												<td>- </td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Moga (Punjab) </td>
+												<td></td>
+												<td>50</td>
+												<td>10</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Dhalai (Tripura) </td>
+												<td></td>
+												<td>60</td>
+												<td>22.5</td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Ramanathapuram (Tamil Nadu) </td>
+												<td></td>
+												<td>- </td>
+												<td>- </td>
+												<td>25.89</td>
+											</tr>
+											<tr>
+												<td>Dholpur (Rajasthan) </td>
+												<td></td>
+												<td>50</td>
+												<td>1.52</td>
+												<td>25.89</td>
+											</tr>
+										</tbody>
+									</table>
+                            </div>
+                        </div>
+                
+				
+                  <div id="mu-table3" class="row mu-table" style="display:none;">
+                            <div class="p-3 bg-body rounded w-100 mt-5 pb-0" id="v-pills-1">
+                                <div class="text-center fw-bold fs-4">No. of beneficiaries provided Loan and the amount of the loan(NSFDC)</div><br/>
+                                
+								<table class="table table-bordered table-striped mb-0">
+                                  <thead class="header-design text-white">
+                                        <tr>
+                                            <th rowspan="2">Name of District  </th>
+                                            <th colspan="2">Status of KPI in district before launch of Mission Utkarsh ( Baseline) For 2021-22  </th>
+                                            <th colspan="2">Current level of KPI in the district  (Loan Amount &amp; Beneficiaries) upto 15.11.2022 </th>
+                                            <th colspan="2">State average (pertaining to State in which the district concerned falls) upto 15.11.2022</th>
+                                            <th colspan="2">National average of the KPI upto 15.11.2022</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td>Number of Beneficiaries given loan</td>
+                                            <td>Loan Disbursed (Rs. Lakhs)  </td>
+                                            <td>Number of Beneficiaries given loan  </td>
+                                            <td>Loan Disbursed (Rs. Lakhs)</td>
+                                            <td>Number of Beneficiaries given loan per district </td>
+                                            <td>Loan Disbursed Per District (Rs. Lakhs)</td>
+                                            <td>Number of Beneficiaries given loan per district </td>
+                                            <td>Loan Disbursed Per District (Rs. Lakhs)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chamba </td>
+                                            <td>41</td>
+                                            <td>30.71</td>
+                                            <td>37</td>
+                                            <td>28</td>
+                                            <td>13</td>
+                                            <td>6.08</td>
+                                            <td>22</td>
+                                            <td>33.77</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bahraich </td>
+                                            <td>51</td>
+                                            <td>37.89</td>
+                                            <td>24</td>
+                                            <td>23.89</td>
+                                            <td>7</td>
+                                            <td>14.45</td>
+                                            <td>22</td>
+                                            <td>33.77</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Raichur </td>
+                                            <td>41</td>
+                                            <td>44.7</td>
+                                            <td>94</td>
+                                            <td>63.93</td>
+                                            <td>87</td>
+                                            <td>229.49</td>
+                                            <td>22</td>
+                                            <td>33.77</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Moga </td>
+                                            <td>3</td>
+                                            <td>4.4</td>
+                                            <td>74</td>
+                                            <td>70.53</td>
+                                            <td>107</td>
+                                            <td>134.09</td>
+                                            <td>22</td>
+                                            <td>33.77</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dhalai </td>
+                                            <td>29</td>
+                                            <td>45.7</td>
+                                            <td>167</td>
+                                            <td>92.92</td>
+                                            <td>39</td>
+                                            <td>116.12</td>
+                                            <td>22</td>
+                                            <td>33.77</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                
+				</div>
                 <!-- </div> -->
             </section>
         </div>
     </div>
+<div class="pb-4">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+                  <a href="https://disabilityaffairs.gov.in/" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/disabilityaffairs.png" class="rounded border bg-white" title="disabilityaffairs" alt="disability affairs" >
+                  </a>
+				  <a href="https://seed.dosje.gov.in/" title="Scheme for Economic Empowerment of DNTs" target="_blank">
+					<img src="https://socialjustice.gov.in/public/bxslider/seed-logo.png" class="rounded border bg-white" title="Scheme for Economic Empowerment of DNTs" alt="Scheme for Economic Empowerment of DNTs" >
+				  </a>
+                  <a href="https://www.ifcicegssc.in/" title="CEGSSC" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/ifci.png" class="rounded border bg-white" title="CEGSSC" alt="CEGSSC" >
+                  </a>
+                  <a href="https://www.vcfsc.in/" title="IFCI VENTURE" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/vcfsc-logo.png" class="rounded border bg-white" title="IFCI VENTURE" alt="IFCI VENTURE" >
+                  </a>
+                  <a href="https://www.mygov.in/" title="My Gov" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/mygov1.png" class="rounded border bg-white" title="My Gov" alt="My Gov" >
+                  </a>
+                  <a href="https://pgportal.gov.in/" title="CPGRAMS" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/cpgrams_logo.png" class="rounded border bg-white" title="CPGRAMS" alt="CPGRAMS" >
+                  </a>
+                  <a href="https://pmagy.gov.in/" title="Pradhan Mantri Adarsh Gram Yojana" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/PMAGY_Logo_small.png" class="rounded border bg-white" title="Pradhan Mantri Adarsh Gram Yojana" alt="Pradhan Mantri Adarsh Gram Yojana">
+                  </a>
+                  <a href="https://www.makeinindia.com/" title="Make In India" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/makeinindia.png" class="rounded border bg-white" title="Make In India" alt="Make In India" >
+                  </a>
+                  <a href="https://india.gov.in/" title="National Portal Of India" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/india-gov.png" class="rounded border bg-white" title="National Portal Of India" alt="National Portal Of India" >
+                  </a>
+                  <a href="https://data.gov.in/" title="Open Government Data (OGD) Platform India" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/data-gov_0.png" class="rounded border bg-white" title="Open Government Data (OGD) Platform India" alt="Open Government Data (OGD) Platform India" >
+                  </a>
+                  <a href="https://www.digitalindia.gov.in/" title="Digital India Program" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/digital-india_1.png" class="rounded border bg-white" title="Digital India Program" alt="Digital India Program" >
+                  </a>
+                  <a href="https://canarabankcsis.in/ACSIS/" title="ACSIS-OBC-EBC" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/ACSIS-OBC-EBC.png" class="rounded border bg-white" title="ACSIS-OBC-EBC image" alt="ACSIS-OBC-EBC" >
+                  </a>
+                  <a href="https://daic.gov.in" title="Dr Ambedkar International Centre" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/daic.jpg" class="rounded border bg-white" title="Dr Ambedkar International Centre" alt="Dr Ambedkar International Centre" >
+                  </a>
+                  <a href="https://www.nsfdc.nic.in/" title="NSCFDC" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/NSCFDC.png" class="rounded border bg-white" title="National Scheduled Castes Finance and Development Corporation" alt="National Scheduled Castes Finance and Development Corporation" >
+                  </a>
+                  <a href="https://nskfdc.nic.in/" title="NSKFDC" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/NSKFDC.png" class="rounded border bg-white" title="National Safai Karamcharis Finance & Development Corporation" alt="National Safai Karamcharis Finance & Development Corporation" >
+                  </a>
+                  <a href="https://secc.gov.in/" title="SECC" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/SECC2011.png" class="rounded border bg-white" title="Socio Economic and Caste Census (SECC)" alt="Socio Economic and Caste Census (SECC)" >
+                  </a>
+                  <a href="https://grants-msje.gov.in/" title="ONPTS" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/ONPTS.png" class="rounded border bg-white" title="e Anudaan" alt="e Anudaan" >
+                  </a>
+                  <a href="https://disabilityaffairs.gov.in/" title="disabilityaffairs" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/disabilityaffairs.png" class="rounded border bg-white" title="disability affairs" alt="disability affairs" >
+                  </a>
+                  <a href="https://www.ifcicegssc.in/" title="CEGSSC" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/ifci.png" class="rounded border bg-white" title="CEGSSC" alt="CEGSSC" >
+                  </a>
+                  <a href="https://www.vcfsc.in/" title="IFCI VENTURE" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/vcfsc-logo.png" class="rounded border bg-white" title="IFCI VENTURE" alt="IFCI VENTURE" >
+                  </a>
+                  <a href="https://ncwwomenhelpline.in/" title="NCW Women's HelpLine" target="_blank">
+                    <img src="https://socialjustice.gov.in/public/bxslider/ncw-helpline.jpg" class="rounded border bg-white" title="NCW Women's HelpLine" alt="NCW Women's HelpLine" >
+                  </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>	
     <footer id="footer" class="">
     <div class="footer-top">
        <div class="container">
@@ -1024,41 +1311,63 @@
        </div>
     </div>
     <div class="footer-top-middle mt-4">
-       <div class="container">
-          <div class="row">
-              <div class="col-lg-4 col-md-4 footer-contacts">
+       <div class="container-fluid">
+          <div class="row justify-content-between">
+              <div class="col-lg-2 col-md-2 footer-contacts">
                 <p>
                 <a href="https://www.nic.in/" target="_blank" style="padding: 0;" onclick="return confirm('This link will take you to an external web site. \n यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।'); ">
                   <img src="assets/img/nic_logo.png" class="img-responsive" style="max-width:100%;"></a>
                 </p>
              </div>
-             <div class="col-lg-6 col-md-6 footer-contacts mt-5">
-              <p class="text-white">This site is designed, developed, hosted and maintained by National Informatics Centre,Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment, Government of India.
+             <div class="col-lg-8 footer-contacts">
+              <p class="text-white text-center">This site is designed, developed, hosted and maintained by National Informatics Centre,<br>Department of Social Justice and Empowerment, Ministry of Social Justice and Empowerment, Government of India.
               </p>
              </div>
           </div>
        </div>
     </div>
     <div class="footer-top-down">
-       <div class="container py-4s">
+       <div class="container-fluid py-4s">
           <div class="copyright float-start"> No. Of Visitors:&nbsp;<strong><span class="red-captcha">130</span></strong>
           </div>
-          <div class="credits float-end">Page last updated on:&nbsp;<a href="" class="fw-bold">14-03-2023</a>
+          <div class="credits float-end">Page last updated on:&nbsp;<span class="fw-bold">14-03-2023</span>
           </div>
        </div>
     </div>
  </footer>
- <script>
-  $(document).ready(function () {
-            $('#scheme').on('change', function () {
-                if (this.value == '1') {
-                    $("#table1").show();
-                }
-                else {
-                    $("#table1").hide();
-                }
-            });
-        });
- </script>
+ 
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://socialjustice.gov.in/public/latest/js/owl.carousel.min.js"></script>	
+<script>
+$('#scheme').change(function() {
+    $('.mu-table').hide();
+    $('#' + $(this).val()).show();
+});
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoWidth:true,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  nav:true,
+  dots:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      300:{
+          items:2
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+});
+</script>
 </body>
 </html>
